@@ -754,7 +754,7 @@ install_prepare_obfs(){
         echo -e "${green}${i}${plain}) ${hint}"
     done
     #read -p "Which obfs you'd select(Default: ${obfs[0]}):" r_obfs
-    r_obfs=6
+    r_obfs=1
     [ -z "$r_obfs" ] && r_obfs=1
     expr ${r_obfs} + 1 &>/dev/null
     if [ $? -ne 0 ]; then
